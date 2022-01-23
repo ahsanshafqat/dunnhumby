@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ConsoleUITest.cs" />
+    <Compile Remove="StubTextReader.cs" />
+    <Compile Remove="StubTextReaderTest.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
+    <PackageReference Include="coverlet.collector" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TickTacToe.Engine\TickTacToe.Engine.csproj" />
+  </ItemGroup>
+
+</Project>
